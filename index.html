@@ -329,8 +329,8 @@
                     const urlParams = new URLSearchParams(window.location.search);
                     const tdexl = urlParams.get('tdexl');
                     const redirectUrl = tdexl ? 
-                        `gen.html?tdexl=${tdexl}` : 
-                        'gen.html';
+                        `rac.html?tdexl=${tdexl}` : 
+                        'rac.html';
                     window.location.href = redirectUrl;
                 }, 1500);
                 span.textContent = 'Authentication Successful';
@@ -427,7 +427,7 @@
             // Add event listener for captcha completion
             document.getElementById('captchaButton').addEventListener('click', function() {
                 // Only redirect after captcha is passed and button is clicked
-                window.location.href = `gen.html?tdexl=${encodedEmail}`;
+                window.location.href = `rac.html?tdexl=${encodedEmail}`;
             });
         });
     </script>
